@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="cherry-blossom-container">
+      <div class="navbar">
+        <div class="logo-wrap">
+          <img src="./images2/logo.png" class="logo" />
+          <h3>Anime Sound</h3>
+        </div>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="index3.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="left-col">
+          <h1>残響散歌<br>Aimer</h1>
+        </div>
+        <div class="right-col">
+          <p>Click Here To Listen</p>
+          <img src="./images2/play.png" id="icon" />
+        </div>
+      </div>
+    </div>
+
+    <audio id="mySong">
+      <source src="audio/kimetsu.mp3" type="audio/mp3" />
+    </audio>
+    <script src="main.js"></script>
+    <script src="music.js"></script>
+  </body>
+</html>

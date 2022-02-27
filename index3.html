@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>お問い合わせフォーム</title>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <div class="contact-form">
+      <p class="title">お問い合わせはこちら</p>
+
+      <form action="https://api.staticforms.xyz/submit" method="post">
+        <input
+          type="hidden"
+          name="accessKey"
+          value="f970a210-71a6-4275-ab5d-bd9de14df8d4"
+        />
+        <!-- Required -->
+        <div class="item">
+          <label class="label">お名前</label>
+          <input type="text" class="input" name="name" required />
+        </div>
+        <div class="item">
+          <label class="label">メールアドレス</label>
+          <input type="e-mail" class="input" name="e-mail" required />
+        </div>
+        <div class="item">
+          <p class="label">ご用件</p>
+          <div class="input">
+            <input type="radio" name="menu" id="a" value="a" /><label for="a"
+              >HP制作</label
+            >
+            <input type="radio" name="menu" id="b" value="b" /><label for="b"
+              >WEB広告</label
+            >
+            <input type="radio" name="menu" id="c" value="c" /><label for="c"
+              >LP制作</label
+            >
+          </div>
+        </div>
+        <div class="item">
+          <label class="label">ご質問</label>
+          <textarea class="inputs" placeholder="ご質問はこちら"></textarea>
+        </div>
+        <div class="button-area">
+          <input type="submit" value="上記内容で送信する" />
+          <input type="reset" value="リセット" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
